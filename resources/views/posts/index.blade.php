@@ -23,7 +23,7 @@
       </div>
       </div>
       <div class="col-md-2">
-        <a href="{{ route('posts.show') }}" class="btn btn-primary">
+        <a href="{{ route('posts.create') }}" class="btn btn-primary">
           新規投稿
         </a>
       </div>
