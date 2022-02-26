@@ -18,8 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-
 // Route::get('/create', function () {
 //     return view('posts.create');
 // });
@@ -54,3 +52,9 @@ Route::get('/post/{id}/edit','PostController@edit')->name('posts.edit');
 Route::put('/post/{id}','PostController@update')->name('posts.update'); 
 
 Route::delete('/post/{id}','PostController@destroy')->name('posts.destroy'); 
+
+// 
+
+Route::get('/comments/create/{post_id}', 'CommentController@create')->name('comments.create');
+
+Route::post('/comments', 'CommentController@store')->name('comments.store');

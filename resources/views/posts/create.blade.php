@@ -8,15 +8,15 @@
                 @csrf 
                 {{-- サニタイジング防止（セキュリティ対策） --}}
                 <div class="form-group">
-                    <label>タイトル</label>
+                    <label>タイトル：{{ $post->title }}</label>
                     <input type="text" class="form-control" placeholder="タイトルを入力して下さい" name="title">
                 </div>
                 <div class="form-group">
-                    <label>内容</label>
+                    <label>内容：{{ $post->body }}</label>
                     <textarea class="form-control" placeholder="内容" rows="5" name="body">
                     </textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">作成</button>
+                <button type="submit" class="btn btn-primary">作成：{{ $post->created_at }}</button>
             </form>
         </div>
     </div>
