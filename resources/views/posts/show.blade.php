@@ -40,5 +40,5 @@
         </div>
       </div>
   </div>
-  <h1>Japanese</h1>
+  <h1>日本語</h1>
   @endsection
